@@ -1,0 +1,91 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9f8;
+    color: #2f3e46;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Navigation bar */
+nav {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #52796f;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #354f52;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #52796f;
+    padding-bottom: 2px;
+}
+
+/* Image styling */
+#bookstore-img {
+    width: 250px;
+    border-radius: 12px;
+    margin: 20px 0;
+    display: block;
+}
+
+/* About section */
+h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #354f52;
+}
+
+p {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+#viewProjectsButton {
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#viewProjectsButton:hover {
+    background-color: #354f52;
+    transform: translateY(-2px);
+}
+
+#viewProjectsButton:active {
+    transform: translateY(0);
+}
