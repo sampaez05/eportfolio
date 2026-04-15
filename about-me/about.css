@@ -1,8 +1,13 @@
-
+#images{
+    height: 500px;
+    width: auto;
+}
 
 .images-div {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: center;   
+    gap: 20px;                
+    margin-top: 20px;
 }
 
 @import url('https://googleapis.com');
