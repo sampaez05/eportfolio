@@ -1,3 +1,6 @@
+@import url('https://googleapis.com');
+
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -23,8 +26,15 @@ header {
 
 /* Navigation bar */
 nav {
-    margin-top: 10px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #CAD2C5;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 20px;
 }
 
 .nav-links {
