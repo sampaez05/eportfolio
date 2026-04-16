@@ -110,3 +110,18 @@ p {
 .github-link:active {
     transform: translateY(0);
 }
+
+.project {
+    display: flex;
+    align-items: flex-start; /* aligns top of text with video */
+    gap: 20px;               /* space between video and text */
+    margin-bottom: 40px;
+}
+
+.project iframe {
+    flex-shrink: 0; /* prevents video from shrinking */
+}
+
+.project-content {
+    max-width: 600px;
+}
