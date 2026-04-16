@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {;
     //redirect to projects page if Click to See Projects Button is clicked
     viewProjectsButton.addEventListener("click", function () {
         //console.log("viewProjectsButton clicked")
-        window.location.href = "../projects/projects.html";
+        window.location.href = "projects/projects.html";
     });
 });
 
