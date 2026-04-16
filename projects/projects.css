@@ -91,7 +91,7 @@ p {
 }
 
 /* Button styling */
-#github-link {
+.github-link {
     background-color: #52796f;
     color: white;
     border: none;
@@ -102,11 +102,11 @@ p {
     transition: all 0.2s ease;
 }
 
-#github-link:hover {
+.github-link:hover {
     background-color: #354f52;
     transform: translateY(-2px);
 }
 
-#github-link:active {
+.github-link:active {
     transform: translateY(0);
 }
