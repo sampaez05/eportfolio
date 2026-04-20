@@ -100,7 +100,28 @@ p {
     transform: translateY(0);
 }
 
-/*
+/* Button styling */
+#viewResumeButton {
+    background-color: #52796f;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#viewResumeButton:hover {
+    background-color: #354f52;
+    transform: translateY(-2px);
+}
+
+#viewResumeButton:active {
+    transform: translateY(0);
+}
+
+
 .page {
     display: flex;
     align-items: flex-start; 
@@ -111,4 +132,20 @@ p {
 .page-content {
     max-width: 600px;
 }
-*/
+
+.page-content:last-child {
+    margin-left: auto;
+}
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    align-self: right;
+}
+
+.skill-section {
+    max-width: 250px;
+}
+
