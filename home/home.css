@@ -158,9 +158,22 @@ p {
     text-align: center; /* optional */
 }
 
-.page-content:last-child {
-    margin-left: auto;
-    align-items: flex-start; 
+.skills {
+    margin: auto 0;
+    display: flex;
+    /* to center the skills section vertically, change flex-start to center
+    align-items: flex-start; */
+    align-items: flex-start;
+    gap: 20px;               
+    margin-bottom: 40px;
+}
+.skills-left {
+    max-width: 500px;
+}
+
+.skills-right {
+    max-width: 600px;
+    float: right;
 }
 
 .skills-container {
@@ -168,18 +181,15 @@ p {
     gap: 40px;
     align-items: flex-start;
     margin-bottom: 40px;
-    align-self: right;
     background-color: #CAD2C5;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 50px;
     border-radius: 20px;
     
-    
 }
 
 .skill-section {
     max-width: 300px;
-    
 }
 
