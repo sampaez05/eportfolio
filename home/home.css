@@ -61,7 +61,7 @@ nav {
 
 /* Image styling */
 #bookstore-img {
-    width: 250px;
+    width: 400px;
     border-radius: 12px;
     margin: 20px 0;
     display: block;
@@ -77,6 +77,16 @@ h2 {
 p {
     max-width: 600px;
     margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto; /* centers entire section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* vertical */
+    align-items: center;      /* horizontal */
 }
 
 /* Button styling */
@@ -110,6 +120,7 @@ p {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+    float: right;
 }
 
 #viewResumeButton:hover {
@@ -121,10 +132,15 @@ p {
     transform: translateY(0);
 }
 
+#skills-header {
+    float: right;
+}
 
 .page {
     display: flex;
-    align-items: flex-start; 
+    /* to center the skills section vertically, change flex-start to center
+    align-items: flex-start; */
+    align-items: flex-start;
     gap: 20px;               
     margin-bottom: 40px;
 }
@@ -132,9 +148,19 @@ p {
 .page-content {
     max-width: 600px;
 }
+.page-content.middle {
+    margin: auto 0;
+}
+
+.page-content:nth-child(2) {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center; /* optional */
+}
 
 .page-content:last-child {
     margin-left: auto;
+    align-items: flex-start; 
 }
 
 .skills-container {
@@ -143,9 +169,17 @@ p {
     align-items: flex-start;
     margin-bottom: 40px;
     align-self: right;
+    background-color: #CAD2C5;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    
+    
 }
 
 .skill-section {
-    max-width: 250px;
+    max-width: 300px;
+    
 }
 
