@@ -13,6 +13,10 @@ body {
     background-color: #f7f9f8;
     color: #2f3e46;
     line-height: 1.6;
+    
+}
+
+.wrapper{
     padding: 20px;
 }
 
@@ -29,11 +33,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background: #CAD2C5;
+  background: #52796f;
   font-family: 'Playfair Display', serif;
   font-weight: 500;
   font-size: 20px;
-  border-radius: 20px;
+
+}
+.nav-header{
+    color: #CAD2C5;
 }
 
 .nav-links {
@@ -44,17 +51,19 @@ nav {
 
 .nav-links li a {
     text-decoration: none;
-    color: #52796f;
+    color: #CAD2C5;
     font-weight: 500;
     transition: color 0.2s ease;
 }
 
 .nav-links li a:hover {
     color: #354f52;
+    font-weight: 600;
+   
 }
 
 .nav-links .active {
-    border-bottom: 2px solid #52796f;
+    border-bottom: 2px solid #CAD2C5;
     padding-bottom: 2px;
 }
 
@@ -138,6 +147,11 @@ p {
     align-items: center;
     gap: 20px;               
     margin-bottom: 40px;
+    background-color: #CAD2C5;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    border-radius: 20px;
 }
 
 .page-content {
