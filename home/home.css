@@ -75,7 +75,7 @@ h2 {
 }
 
 p {
-    max-width: 600px;
+    max-width: none;
     margin-bottom: 20px;
 }
 
@@ -120,7 +120,7 @@ p {
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.2s ease;
-    float: right;
+    /*float: right;*/
 }
 
 #viewResumeButton:hover {
@@ -132,48 +132,85 @@ p {
     transform: translateY(0);
 }
 
-#skills-header {
-    float: right;
-}
-
 .page {
     display: flex;
     /* to center the skills section vertically, change flex-start to center
     align-items: flex-start; */
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;               
     margin-bottom: 40px;
 }
 
 .page-content {
-    max-width: 600px;
+    /*max-width: 600px;*/
+    flex: 1;               /* allows both sides to grow */
+    max-width: none;
+}
+.page-content:first-child {
+    flex: 0 0 auto;   /* image stays natural size */
 }
 .page-content.middle {
     margin: auto 0;
-}
-
-.page-content:nth-child(2) {
     margin-top: auto;
     margin-bottom: auto;
     text-align: center; /* optional */
 }
 
+.page-content.middle p {
+    max-width: none;   /* allows full width */
+}
+
 .skills {
+    /*
     margin: auto 0;
     display: flex;
     /* to center the skills section vertically, change flex-start to center
-    align-items: flex-start; */
+    align-items: flex-start; 
     align-items: flex-start;
     gap: 20px;               
-    margin-bottom: 40px;
+    margin-bottom: 40px;*/
+    display: flex;
+    justify-content: center;   /* centers entire skills block horizontally */
+    align-items: center;       /* optional: vertical alignment */
+    gap: 40px;
+    margin: 40px auto;
+    max-width: 1200px;         /* keeps it nicely centered */
 }
+
+#skills-header {
+    /*float: right;*/
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
 .skills-left {
-    max-width: 500px;
+    /*max-width: 500px;*/
+}
+
+.skills-middle {
+    /*max-width: 400px;*/
+    /*float: right;*/
+    text-align: center;
+    
 }
 
 .skills-right {
-    max-width: 600px;
-    float: right;
+    /*max-width: 250px;*/
+    align-items: flex-end;
+}
+
+.skills-left,
+.skills-middle,
+.skills-right {
+    flex: 0 1 auto;  /* size based on content */
+}
+
+/* Image styling */
+#coding-img {
+    width: 300px;
+    margin: 20px 0;
+    display: block;
 }
 
 .skills-container {
@@ -191,5 +228,6 @@ p {
 
 .skill-section {
     max-width: 300px;
+    text-align: left;
 }
 
