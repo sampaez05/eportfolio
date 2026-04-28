@@ -14,6 +14,10 @@ body {
     background-color: #f7f9f8;
     color: #2f3e46;
     line-height: 1.6;
+    
+}
+
+.wrapper{
     padding: 20px;
 }
 
@@ -24,7 +28,8 @@ header {
     margin-bottom: 10px;
 }
 
-/* Navigation bar */
+/*
+Navigation bar
 nav {
   display: flex;
   justify-content: space-between;
@@ -56,5 +61,44 @@ nav {
 
 .nav-links .active {
     border-bottom: 2px solid #52796f;
+    padding-bottom: 2px;
+}*/
+
+/* Navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #52796f;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.nav-header{
+    color: #CAD2C5;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #CAD2C5;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+    color: #354f52;
+    font-weight: 600;
+   
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #CAD2C5;
     padding-bottom: 2px;
 }

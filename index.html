@@ -6,7 +6,7 @@
     <div>
         
         <nav>
-            <header>Sam's E-Portfolio
+            <header class="nav-header">Sam's E-Portfolio</header>
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about-me/about.html">About Me</a></li>
@@ -14,9 +14,9 @@
                     <li><a href="resume/resume.html">Resume</a></li>
                     <!-- Will make them link to pages properly soon  -->
                 </ul>
-            </header>
+            
         </nav>
-        <body>
+        <div class="wrapper">
             <br>
             <div class="page">
                 <div class="page-content">
@@ -29,9 +29,22 @@
                         If you’re interested in learning more about these projects click here! 
                     </p>
                     <button id="viewProjectsButton">Click to View Coding Projects</button>
+                    
                 </div>
-                <div class="page-content skills">
-                    <header class="skills-header">Technical Skills</header>
+            </div>
+        </div>
+        <div class="wavy-line"></div>
+        <div class="wrapper">
+            <div class="skills">
+                <div class="skills-left">
+                    <p>
+                        If you want to see these skills in action, view my projects page! It is there that you can see demo videos of projects as well as see my github repositories. You can also view my resume here!
+                    </p>
+                    <button id="viewProjectsButton">Click to View Coding Projects</button>
+                    <a id="viewResumeButton" style="text-decoration:none"href="resume/resume.html">Click to View Resume</a>
+                </div>
+                <div class="skills-middle">
+                    <h2 class="skills-header">Technical Skills</h2>
                     <div class="skills-container">
                         <div class="skill-section">
                             <h3>Languages</h3>
@@ -57,10 +70,12 @@
                             <li style="list-style-type: none;">Prisma</li>
                         </div>
                     </div>
-                    <a id="viewResumeButton" style="text-decoration:none"href="resume/resume.html">Click to View Resume</a>
+                </div>
+                <div class="skills-right">
+                    <img id="coding-img" src="images/coding.png" alt="Icon of computer screen with a slash inside traingle brackets">
                 </div>
             </div>
-        </body>
+        </div>
     </div>
     <script src="home/home.js"></script>
 </html>
