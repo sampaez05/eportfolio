@@ -98,7 +98,7 @@ p {
 }
 
 /* Button styling */
-#viewProjectsButton {
+.viewProjectsButton {
     background-color: #52796f;
     color: white;
     border: none;
@@ -109,12 +109,12 @@ p {
     transition: all 0.2s ease;
 }
 
-#viewProjectsButton:hover {
+.viewProjectsButton:hover {
     background-color: #354f52;
     transform: translateY(-2px);
 }
 
-#viewProjectsButton:active {
+.viewProjectsButton:active {
     transform: translateY(0);
 }
 
